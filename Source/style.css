@@ -1,0 +1,80 @@
+:root{
+    --text-color: hsl(193, 38%, 86%);
+    --advice-dice-color: hsl(150, 100%, 66%);
+    --advice-card-color: hsl(217, 19%, 24%);
+    --background-color: hsl(218, 23%, 16%);
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.card{
+    font-size: 25px;
+    background-color: var(--advice-card-color);
+    max-width: 345px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    flex-shrink: 1;
+}
+
+span{
+    color: var(--advice-dice-color);
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+.dice{
+    background-color: var(--advice-dice-color);
+}
+
+.gira{
+    animation: gira 2s;
+}
+
+@keyframes gira{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+.dado{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--advice-dice-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    transform: translatey(-20px);
+}
+
+p{
+    padding: 23px;
+    font-size: 23px;
+}
+
+picture img{
+    margin: 20px;
+    width: 80%;
+   
+}
